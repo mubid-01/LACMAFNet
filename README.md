@@ -3,7 +3,7 @@
 This repository provides the model description for **LACMAFNet**, a single, unified framework for robustly segmenting heterogeneous brain lesions from multi-modal MRI scans, as presented in the paper:
 
 > **LACMAFNet: A Lesion-aware Hierarchical Gating Framework for Robust Multimodal Brain Lesion Segmentation**  
-> *Md. Mehedi Hassan, Shafqat Alam, Shahriar Ahmed Seam, and Dr. Maruf Ahmed*
+> *Md. Mehedi Hassan, Shafqat Alam, Shahriar Ahmed Seam, and Maruf Ahmed*
 
 ## Overview
 
