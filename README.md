@@ -70,7 +70,7 @@ If you use LACMAFNet in your research, please cite the original paper.
 
 # WMH Segmentation Model
 
-This repository contains an implementation of the LC-DECMAFNet model for White Matter Hyperintensity (WMH) segmentation from brain MRI images.
+This repository contains an implementation of the LACMAFNet model for White Matter Hyperintensity (WMH) segmentation from brain MRI images.
 
 ## Project Structure
 
