@@ -169,27 +169,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-"""
-    '''
-    /path/to/my_wmh_dataset/
-├── flair/
-│   ├── sub-001_flair.nii.gz
-│   └── sub-002_flair.nii.gz
-├── t1/
-│   ├── sub-001_t1.nii.gz
-│   └── sub-002_t1.nii.gz
-└── masks/
-    ├── sub-001_wmh.nii.gz
-    └── sub-002_wmh.nii.gz
-    '''
-"""
-
-"""
-python preprocess_data.py \
-    --input_dir /path/to/my_wmh_dataset \
-    --output_dir /path/to/my_processed_wmh_dataset \
-    --modalities flair t1 \
-    --mask_subdir masks \
-    --norm_ref t1
-"""
