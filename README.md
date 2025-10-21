@@ -68,11 +68,11 @@ If you use LACMAFNet in your research, please cite the original paper.
 }
 ```
 
-# WMH Segmentation Model
+# LACMAFNet Model
 
-This repository contains an implementation of the LACMAFNet model for White Matter Hyperintensity (WMH) segmentation from brain MRI images.
+This repository contains the implementation of the LACMAFNet model for brain lesion segmentation from multimodal MRI datasets.
 
-## Project Structure
+## Project Structure(Example case was provided for WMH scripts)
 
 ```
 .
