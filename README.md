@@ -41,7 +41,7 @@ The decoder is responsible for precise mask reconstruction and is built upon a *
 
 ## Performance Highlights
 
-LACMAFNet was evaluated on three challenging public datasets, demonstrating a superior and more balanced performance profile than specialized, state-of-the-art methods.
+LACMAFNet was evaluated on three challenging public datasets, demonstrating a superior and more balanced performance profile than specialized, state-of-the-art methods. Pretrained Weights can be found in this [link](https://drive.google.com/drive/folders/1dTaGdnppu6p6WQDrL0tHeQCsbtnj50xG?usp=sharing).
 
 *   **MICCAI 2017 WMH Challenge (Chronic Small Vessel Disease):**
     *   Achieved the highest **DSC of 0.831** and the best lesion **F1-Score of 0.816**.
