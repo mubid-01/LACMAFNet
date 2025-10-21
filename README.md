@@ -83,15 +83,20 @@ This repository contains the implementation of the LACMAFNet model for brain les
 │   ├── models/
 │   │   ├── __init__.py
 │   │   ├── blocks.py             # Neural network building blocks
-│   │   └── lacmafnet.py      # Main model architecture
+│   │   └── lacmafnet_N_mod.py      # Main model architecture
 │   └── utils/
-│       ├── __init__.py
-│       └── wmh_utils.py          # Evaluation metrics and post-processing
+│       └── helpers/
+|       │   ├── __init__.py           
+|       │   └── wmh_helpers.py
+|       ├── __init__.py           
+|       └──utils.py
 ├── scripts/
 │   └── wmh/
-│       ├── train.py              # Training script
-│       ├── test_inference_final.py # Test set inference
-│       └── evaluate.py           # Evaluation metrics computation
+│       ├── evaluate_test_set.py              
+│       ├── inference_sliding_window.py
+|       ├── test_inference_final.py
+|       ├── train.py
+│       └── tune_postprocessing.py        
 ├── requirements.txt
 └── README.md
 ```
