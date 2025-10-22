@@ -10,7 +10,7 @@ from .blocks import (
 )
 
 class CustomEncoder5(nn.Module):
-    def __init__(self, in_channels=1, chs=(96,128,256,384,512)):
+    def __init__(self, in_channels=1, chs=(64, 96, 128, 192, 256)):
         super().__init__()
         c1,c2,c3,c4,c5 = chs
         self.s1 = EncoderStage(in_channels, c1, conv_kernels=[5,3])
