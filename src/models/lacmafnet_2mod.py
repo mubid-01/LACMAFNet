@@ -15,7 +15,6 @@ class CustomEncoder5(nn.Module):
         c1,c2,c3,c4,c5 = chs
         self.s1 = EncoderStage(in_channels, c1, conv_kernels=[5,3])
         self.p1 = nn.MaxPool2d(2,2)
-        # --- CHANGE 5: Reduced encoder depth ---
         self.s2 = EncoderStage(c1, c2, conv_kernels=[3,3])
         self.p2 = nn.MaxPool2d(2,2)
         self.s3 = EncoderStage(c2, c3, conv_kernels=[3,3])
