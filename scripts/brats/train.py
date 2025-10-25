@@ -40,7 +40,7 @@ class Config:
     token_dim=256
     bottleneck_heads=8
     bottleneck_window=8
-    pre_swin_layers=4
+    pre_swin_layers=2
     dropout_rate = 0.4
     
     epochs = 300
