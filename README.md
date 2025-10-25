@@ -1,15 +1,15 @@
-# LACMAFNet: A Lesion-aware Hierarchical Gating Framework for Robust Multimodal Brain Lesion Segmentation
+# SYNAPSE-Net: A Unified Framework with Lesion-Aware Hierarchical Gating for Robust Segmentation of Heterogeneous Brain Lesions
 
-This repository provides the model description for **LACMAFNet**, a single, unified framework for robustly segmenting heterogeneous brain lesions from multi-modal MRI scans, as presented in the paper:
+This repository provides the model description for **SYNAPSE-Net**, a single, unified framework for robustly segmenting heterogeneous brain lesions from multi-modal MRI scans, as presented in the paper:
 
-> **LACMAFNet: A Lesion-aware Hierarchical Gating Framework for Robust Multimodal Brain Lesion Segmentation**  
+> **SYNAPSE-Net: A Unified Framework with Lesion-Aware Hierarchical Gating for Robust Segmentation of Heterogeneous Brain Lesions**  
 > *Md. Mehedi Hassan, Shafqat Alam, Shahriar Ahmed Seam, and Maruf Ahmed*
 
 ## Overview
 
-LACMAFNet is designed to address two critical challenges in clinical neuroimaging: the lack of **generalization** across different pathologies and the high **performance variance** of specialized deep learning models.
+SYNAPSE-Net is designed to address two critical challenges in clinical neuroimaging: the lack of **generalization** across different pathologies and the high **performance variance** of specialized deep learning models.
 
-Instead of creating separate 'point solutions' for each task, LACMAFNet provides a single, powerful, and adaptable architecture that achieves state-of-the-art performance across a variety of brain lesion segmentation tasks, including white matter hyperintensities (WMH), ischemic stroke, and glioblastoma.
+Instead of creating separate 'point solutions' for each task, SYNAPSE-Net provides a single, powerful, and adaptable architecture that achieves state-of-the-art performance across a variety of brain lesion segmentation tasks, including white matter hyperintensities (WMH), ischemic stroke, and glioblastoma.
 
 ## Key Features
 
@@ -21,10 +21,10 @@ Instead of creating separate 'point solutions' for each task, LACMAFNet provides
 
 ## Architecture
 
-The LACMAFNet architecture is composed of three key stages: a multi-stream encoder, a hybrid bottleneck for feature fusion, and a hierarchical gated decoder for mask reconstruction.
+The SYNAPSE-Net architecture is composed of three key stages: a multi-stream encoder, a hybrid bottleneck for feature fusion, and a hierarchical gated decoder for mask reconstruction.
 
 
-*Fig 1. The LACMAFNet architecture, consisting of N parallel CNN encoders, a hybrid bottleneck, and a Hierarchical Gated Decoder.*
+*Fig 1. The SYNAPSE-Net architecture, consisting of N parallel CNN encoders, a hybrid bottleneck, and a Hierarchical Gated Decoder.*
 
 #### 1. Unified Multi-Stream Encoder
 To preserve crucial modality-specific pathological information, each input MRI sequence (e.g., T1, T2-FLAIR, DWI) is processed by an independent, parallel CNN encoder. This "late-fusion" approach prevents the early loss of subtle indicators. Skip connections from each stream are later refined and fused using a Convolutional Block Attention Module (CBAM) before being passed to the decoder.
@@ -41,7 +41,7 @@ The decoder is responsible for precise mask reconstruction and is built upon a *
 
 ## Performance Highlights
 
-LACMAFNet was evaluated on three challenging public datasets, demonstrating a superior and more balanced performance profile than specialized, state-of-the-art methods. Pretrained Weights can be found in this [link](https://drive.google.com/drive/folders/1dTaGdnppu6p6WQDrL0tHeQCsbtnj50xG?usp=sharing).
+SYNAPSE-Net was evaluated on three challenging public datasets, demonstrating a superior and more balanced performance profile than specialized, state-of-the-art methods. Pretrained Weights can be found in this [link](https://drive.google.com/drive/folders/1dTaGdnppu6p6WQDrL0tHeQCsbtnj50xG?usp=sharing).
 
 *   **MICCAI 2017 WMH Challenge (Chronic Small Vessel Disease):**
     *   Achieved the highest **DSC of 0.831** and the best lesion **F1-Score of 0.816**.
@@ -57,20 +57,20 @@ LACMAFNet was evaluated on three challenging public datasets, demonstrating a su
 
 ## Citation
 
-If you use LACMAFNet in your research, please cite the original paper.
+If you use SYNAPSE-Net in your research, please cite the original paper.
 
 ```bibtex
-@article{Hassan_LACMAFNet_2025,
+@article{Hassan_SYNAPSE-Net_2025,
   author    = {Md. Mehedi Hassan and Shafqat Alam and Shahriar Ahmed Seam and Dr. Maruf Ahmed},
-  title     = {LACMAFNet: A Lesion-aware Hierarchical Gating Framework for Robust Multimodal Brain Lesion Segmentation},
+  title     = {SYNAPSE-Net: A Lesion-aware Hierarchical Gating Framework for Robust Multimodal Brain Lesion Segmentation},
   journal   = {arXiv preprint},
   year      = {2025}
 }
 ```
 
-# LACMAFNet Model
+# SYNAPSE-Net Model
 
-This repository contains the implementation of the LACMAFNet model for brain lesion segmentation from multimodal MRI datasets.
+This repository contains the implementation of the SYNAPSE-Net model for brain lesion segmentation from multimodal MRI datasets.
 
 ## Project Structure(Example case was provided for WMH scripts)
 
@@ -83,7 +83,7 @@ This repository contains the implementation of the LACMAFNet model for brain les
 │   ├── models/
 │   │   ├── __init__.py
 │   │   ├── blocks.py             # Neural network building blocks
-│   │   └── lacmafnet_N_mod.py      # Main model architecture
+│   │   └── SYNAPSE-Net_N_mod.py      # Main model architecture
 │   └── utils/
 │       └── helpers/
 |       │   ├── __init__.py           
@@ -211,7 +211,7 @@ Python packages required for this project are listed in `requirements.txt`. Inst
 pip install -r requirements.txt
 ```
 
-The model is based on the LACMAFNet architecture with the following key components:
+The model is based on the SYNAPSE-Net architecture with the following key components:
 
 - Dual-encoder pathway for FLAIR and T1 MRI processing
 - Swin Transformer blocks for feature enhancement
