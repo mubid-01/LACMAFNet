@@ -59,7 +59,7 @@ class LACMAFNet_4mod(nn.Module):
                  adaptive_tokens_h=13,
                  adaptive_tokens_w=13,
                  aux_outs=2,
-                 pre_swin_layers=4,
+                 pre_swin_layers=2,
                  dropout_rate: float = 0.4,
                  num_modalities: int = 4,
                  num_classes: int = 4,
