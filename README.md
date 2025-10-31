@@ -24,7 +24,7 @@ Instead of creating separate 'point solutions' for each task, SYNAPSE-Net provid
 
 The SYNAPSE-Net architecture is composed of three key stages: a multi-stream encoder, a hybrid bottleneck for feature fusion, and a hierarchical gated decoder for mask reconstruction.
 
-![Graphical Abstract](Graphical%20Abstract.png)
+![Graphical Abstract](Graphical_Abstract.png)
 *Fig 1. The Graphical Abstract*
 
 #### 1. Unified Multi-Stream Encoder
